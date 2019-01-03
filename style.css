@@ -1,0 +1,265 @@
+body {
+	background-color: white;
+	margin: 0;
+}
+
+
+.topnav{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    overflow: auto:
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: #000000;
+    font-size: 100%;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.food img{
+  border-radius: 4px;
+  padding: 5px;
+  width: 100%;
+}
+
+
+.card{
+	margin-top: 20px;
+		background-image: linear-gradient( #FFDAB9, #FFDAB9, white, white, white, #FFDAB9);
+	 opacity: 20%;
+	 border-radius: 30px;
+	 padding-top: -20px;
+	 padding-bottom: 50px;
+}
+
+.card img  {
+		margin-left: 20%;
+		margin-top: 0px;
+		border: 1px solid #ddd;
+		border-radius: 4px;
+		padding: 5px;
+		width: 50%;
+		height: 50%;
+		box-shadow: 10px 10px 5px grey;
+
+}
+
+.sidebar img  {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 150px;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+h2{
+	font-family: 'Lobster', cursive;
+	font-size: 50px;
+  margin-left: 10px;
+}
+
+p{
+	font-family: 'Open Sans', sans-serif;
+	font size: 15px;
+  margin: 15px
+}
+
+
+
+.button {
+  float: right;
+  margin-right: 4px;
+  margin-left: 4px;
+  padding:5px 5px;
+  font-size: 15px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #FC6600;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 1px #999;
+}
+
+.button:hover {background-color: grey}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 1px #666;
+  transform: translateY(1px);
+}
+
+
+.site{
+  display: grid;
+  			grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto 1fr 3fr;
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+        grid-template-areas:
+          "header header"
+          "main main"
+          "main main"
+          "sidebar sidebar";
+
+}
+
+.sidebar{
+  grid-area: sidebar;
+	background-image: linear-gradient(white, white, white, white, white, #FF7F50);
+  text-align: center;
+
+}
+
+.main-content{
+  grid-area: main;
+	justify-self: center;
+
+}
+
+.masthead{
+  grid-area: header;
+
+}
+
+
+@media screen and (min-width: 1200px) {
+
+	.site{
+	  display: grid;
+	  			grid-template-columns: 1fr 3fr 1fr;
+	        grid-template-rows: 5% 3fr 50px;
+	        grid-column-gap: 10px;
+	        grid-row-gap: 10px;
+	        grid-template-areas:
+	          "header header sidebar"
+	          "main main sidebar"
+	          "main main sidebar";
+
+	}
+
+
+
+
+	li a {
+      display: block;
+      color: #000000;
+      font-size: 50px;
+
+ }
+
+.card{
+	margin-top: 20px;
+		background-image: linear-gradient( #FFDAB9, #FFDAB9, white, white, white, #FFDAB9);
+	 opacity: 20%;
+	 border-radius: 30px;
+	 padding-top: -20px;
+	 padding-bottom: 50px;
+}
+
+ .card img  {
+	   margin-left: 30%;
+		 margin-top: 150px;
+     border: 1px solid #ddd;
+     border-radius: 4px;
+     padding: 5px;
+     width: 50%;
+		 height: 50%;
+     box-shadow: 10px 10px 5px grey;
+
+ }
+
+ .sidebar img  {
+
+	 	margin-top: 80%;
+		 border: 1px solid #ddd;
+     border-radius: 4px;
+     padding: 5px;
+     width: 150px;
+ }
+
+ .food img{
+	 margin: 0;
+   border-radius: 4px;
+   width: 300px;
+ }
+
+div .food{
+	width: 300px;
+	 height: 100px;
+}
+
+
+.sidebar{
+  grid-area: sidebar;
+  text-align: center;
+ box-shadow: 5px 10px;
+}
+
+ .main-content{
+ 			padding-left:20%;
+			padding-right: 20%;
+      margin: 20px;
+      margin-bottom: 400px;
+      padding-top: 20px;
+      padding-bottom: 10px;
+      border-top: solid;
+      border-width: thin;
+    }
+
+     .topnav{
+       margin-top: 40px;
+			 padding-bottom: 0px;
+     }
+    .smedia{
+      margin: auto;
+      width: 50%;
+    }
+}
